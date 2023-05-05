@@ -2,15 +2,6 @@ import React from "react";
 import Character from "../characters/Character";
 import Starship from "../starships/Starship";
 import Planet from "../planets/Planet";
-import {
-  Heading,
-  VStack,
-  Tabs,
-  Tab,
-  TabList,
-  TabPanels,
-  TabPanel,
-} from "@chakra-ui/react";
 import { Routes, Route } from "react-router-dom";
 import HomeTabsPanel from "./homeTabsPanel";
 

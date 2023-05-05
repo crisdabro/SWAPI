@@ -1,4 +1,4 @@
-import { IStarship } from "./types";
+import { IStarship } from "../state/starships/types";
 
 export const fetchStarship = async (id: number): Promise<IStarship> => {
   const res = await fetch(`https://swapi.dev/api/starships/${id}/`);

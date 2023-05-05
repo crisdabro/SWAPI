@@ -3,7 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import Home from "../home/home";
+import Home from "../home/routes";
 
 const queryClient = new QueryClient();
 

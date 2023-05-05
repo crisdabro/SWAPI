@@ -8,7 +8,7 @@ import { RootState, AppThunk } from "../store";
 import { IStarship } from "./types";
 import { STATUS } from "../../constants";
 import { getIdFromUrl } from "../../utils";
-import { fetchStarship } from "./starshipAPI";
+import { fetchStarship } from "../../services/service";
 
 export interface StarshipsState {
   starships: IStarship[];
