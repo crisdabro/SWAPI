@@ -16,6 +16,7 @@
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "framer-motion": "^10.11.2",
+    "lru-cache": "^9.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
@@ -30,7 +31,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress": "cypress open",
+    "test:e2e": "\"test:e2e:run\" \"test:e2e:start\"",
+    "test:e2e:run": "start-server-and-test start http://localhost:3000 cypress"
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +53,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^9.0.0",
+    "cypress": "^12.11.0",
+    "eslint-plugin-cypress": "^2.13.3",
+    "start-server-and-test": "^2.0.0"
   }
 }
